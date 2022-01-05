@@ -4,7 +4,7 @@ function Receipt(props) {
   return (
     <>
       <div>Customer: {props.person}</div>
-      <ul>
+      <ul style={{ listStyleType: "none", margin: "0", padding: "0" }}>
         Order:
         <li>{props.order.main}</li>
         <li>{props.order.protein}</li>
