@@ -13,7 +13,7 @@ function Form(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{ textAlign: "center" }}>
       <label>
         <span>Search for receipt by name</span>
         <input value={formData} onChange={handleChange} />
