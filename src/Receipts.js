@@ -8,8 +8,9 @@ function Receipts(props) {
       <Receipt
         key={index}
         order={object.order}
-        paid={object.paid}
+        paid={String(object.paid)}
         person={object.person}
+        handleToggle={props.handleToggle}
       />
     );
   });

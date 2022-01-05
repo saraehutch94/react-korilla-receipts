@@ -14,11 +14,15 @@ export default function App() {
     setReceipt(foundPeople);
   }
 
+  function handleToggle() {
+    console.log("hi");
+  }
+
   return (
     <div className="App">
       <h1>Korilla Receipts</h1>
       <Form grabInput={grabInput} />
-      <Receipts receipts={receipt} />
+      <Receipts receipts={receipt} handleToggle={handleToggle} />
     </div>
   );
 }

@@ -13,9 +13,10 @@ function Receipt(props) {
         <li>{props.order.sauce}</li>
       </ul>
       <div>Total: {props.order.cost}</div>
-      <div>Paid: {String(props.paid)}</div>
+      <div>
+        Paid: <span onClick={props.handleToggle}>{props.paid}</span>
+      </div>
     </div>
   );
 }
-
 export default Receipt;
