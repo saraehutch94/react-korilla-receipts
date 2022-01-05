@@ -6,10 +6,15 @@ import "./styles.css";
 
 export default function App() {
   const [receipt, setReceipt] = useState(receipts);
+
+  function grabInput(input) {
+    console.log(input);
+  }
+
   return (
     <div className="App">
       <h1>Korilla Receipts</h1>
-      <Form />
+      <Form grabInput={grabInput} />
       <Receipts receipts={receipt} />
     </div>
   );
