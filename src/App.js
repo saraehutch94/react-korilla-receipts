@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import receipts from "./receiptData";
 import Receipts from "./Receipts";
+import Form from "./Form";
 import "./styles.css";
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>Korilla Receipts</h1>
+      <Form />
       <Receipts receipts={receipt} />
     </div>
   );
