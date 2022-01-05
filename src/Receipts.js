@@ -1,6 +1,6 @@
 import React from "react";
 
-function Receipts() {
+function Receipts(props) {
   return <div>Hello Receipts</div>;
 }
 

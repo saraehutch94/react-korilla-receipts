@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>Korilla Receipts</h1>
-      <Receipts />
+      <Receipts receipts={receipt} />
     </div>
   );
 }
