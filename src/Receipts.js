@@ -7,6 +7,7 @@ function Receipts(props) {
     return (
       <Receipt
         key={index}
+        id={object.id}
         order={object.order}
         paid={String(object.paid)}
         person={object.person}

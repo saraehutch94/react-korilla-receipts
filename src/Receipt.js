@@ -14,7 +14,10 @@ function Receipt(props) {
       </ul>
       <div>Total: {props.order.cost}</div>
       <div>
-        Paid: <span onClick={props.handleToggle}>{props.paid}</span>
+        Paid:
+        <span id={props.id} onClick={props.handleToggle}>
+          {props.paid}
+        </span>
       </div>
     </div>
   );

@@ -14,8 +14,11 @@ export default function App() {
     setReceipt(foundPeople);
   }
 
-  function handleToggle() {
-    console.log("hi");
+  function handleToggle(e) {
+    // console.log(e.target.id);
+    const foundObject = receipt.find((object) => {
+      return String(object.id) === e.target.id;
+    });
   }
 
   return (
