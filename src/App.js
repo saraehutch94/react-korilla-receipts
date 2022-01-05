@@ -8,7 +8,10 @@ export default function App() {
   const [receipt, setReceipt] = useState(receipts);
 
   function grabInput(input) {
-    console.log(input);
+    const foundPeople = receipts.filter((people) => {
+      return people.person === input;
+    });
+    setReceipt(foundPeople);
   }
 
   return (
