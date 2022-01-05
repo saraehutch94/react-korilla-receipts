@@ -1,10 +1,11 @@
 import React from "react";
+import "./styles.css";
 
 function Receipt(props) {
   return (
-    <>
+    <div className="ind-receipt">
       <div>Customer: {props.person}</div>
-      <ul style={{ listStyleType: "none", margin: "0", padding: "0" }}>
+      <ul style={{ listStyleType: "none", padding: "0" }}>
         Order:
         <li>{props.order.main}</li>
         <li>{props.order.protein}</li>
@@ -13,7 +14,7 @@ function Receipt(props) {
       </ul>
       <div>Total: {props.order.cost}</div>
       <div>Paid: {String(props.paid)}</div>
-    </>
+    </div>
   );
 }
 

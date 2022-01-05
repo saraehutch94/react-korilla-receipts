@@ -1,5 +1,6 @@
 import React from "react";
 import Receipt from "./Receipt";
+import "./styles.css";
 
 function Receipts(props) {
   const mappedReceipts = props.receipts.map((object, index) => {
@@ -15,8 +16,7 @@ function Receipts(props) {
 
   return (
     <>
-      <div>Hello Receipts</div>
-      <div>{mappedReceipts}</div>
+      <div className="flex-receipts">{mappedReceipts}</div>
     </>
   );
 }

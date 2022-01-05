@@ -1,4 +1,19 @@
 .App {
   font-family: sans-serif;
+}
+
+h1 {
   text-align: center;
+}
+
+.flex-receipts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.ind-receipt {
+  padding: 20px;
+  border: 1px solid orange;
 }
