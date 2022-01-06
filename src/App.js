@@ -15,10 +15,13 @@ export default function App() {
   }
 
   function handleToggle(e) {
-    // console.log(e.target.id);
-    const foundObject = receipt.find((object) => {
-      return String(object.id) === e.target.id;
+    const receiptsCopy = [...receipt];
+    receiptsCopy.forEach((r) => {
+      if (r.id === parseInt(e.target.id)) {
+        r.paid = !r.paid;
+      }
     });
+    setReceipt(receiptsCopy);
   }
 
   return (
