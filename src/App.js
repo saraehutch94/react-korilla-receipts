@@ -8,10 +8,14 @@ export default function App() {
   const [receipt, setReceipt] = useState(receipts);
 
   function grabInput(input) {
-    const foundPeople = receipts.filter((people) => {
-      return people.person === input;
-    });
-    setReceipt(foundPeople);
+    if (input === "") {
+      setReceipt(receipts);
+    } else {
+      const foundPeople = receipts.filter((people) => {
+        return people.person === input;
+      });
+      setReceipt(foundPeople);
+    }
   }
 
   function handleToggle(e) {
